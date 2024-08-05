@@ -1,13 +1,8 @@
 export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'a',
+    title: '万川汇泽综合金融服务平台 - 万川汇泽综合服务与产业孵化平台',
     htmlAttrs: {
       lang: 'en',
-    },
-    server: {
-      port: 20383,
-      host: 'localhost'
     },
     meta: [
       { charset: 'utf-8' },
@@ -17,25 +12,14 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['element-ui/lib/theme-chalk/index.css'],
-
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['@/plugins/element-ui'],
-
-  // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
+  css: ['element-ui/lib/theme-chalk/index.css'],// Global CSS: https://go.nuxtjs.dev/config-css
+  plugins: ['@/plugins/element-ui'],// Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+  components: true,// Auto import components: https://go.nuxtjs.dev/config-components
+  buildModules: [// Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+    '@nuxtjs/eslint-module',// https://go.nuxtjs.dev/eslint
   ],
-
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: [/^element-ui/],
