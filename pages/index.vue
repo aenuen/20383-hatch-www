@@ -1,17 +1,10 @@
 <template>
-  <TheHeader />
+  <div>2</div>
 </template>
+
 <script>
-// api
-// components
-// data
-// filter
-// function
-// mixin
-// plugins
-// settings
 export default {
-  name: 'PagesIndex',
+  name: 'IndexPage',
+  layout: 'main',
 }
 </script>
-<style lang="scss" scoped></style>

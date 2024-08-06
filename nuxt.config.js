@@ -3,7 +3,7 @@ const keyword = '万川汇泽综合金融服务平台,金融产品,电子保函,
 const description = '万川汇泽综合金融服务平台是提供金融产品,电子保函,供应链金融,电商平台的综合服务平台,服务热线：400-0599616'
 export default {
   head: {
-    title: '万川汇泽综合金融服务平台 - 万川汇泽综合服务与产业孵化平台',
+    title,
     htmlAttrs: {
       lang: 'en',
     },
@@ -28,7 +28,8 @@ export default {
   build: {
     transpile: [/^element-ui/],
     // 合并CSS
-    extractCSS: true, optimization: {
+    extractCSS: true,
+    optimization: {
       splitChunks: {
         cacheGroups: {
           styles: {

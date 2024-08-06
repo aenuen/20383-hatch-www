@@ -21,7 +21,7 @@
           </li>
         </ul>
       </nav>
-      <div class="telephone">1</div>
+      <div class="telephone">服务热线：400-0883655</div>
     </div>
   </header>
 </template>
@@ -36,13 +36,16 @@ import navAry from './navAry'
 // plugins
 // settings
 export default {
-  name: 'ComponentsTheHeader',
+  name: 'TheHeader',
+  components: {},
+  mixins: [],
   data() {
     return {
       logoName: '万川汇泽综合服务与产业孵化平台',
       navAry,
     }
   },
+  created() {},
   methods: {
     openPage(url) {
       window.open(url, '_blank')
