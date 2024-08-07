@@ -64,6 +64,10 @@
                 </ul>
               </div>
             </div>
+            <div class="footerCopy">
+              <div>技术支持：福建万川信息科技股份有限公司</div>
+              <div>ICP备案：<a href="https://beian.miit.gov.cn" target="_blank">闽ICP备19019555号</a></div>
+            </div>
           </div>
         </el-col>
       </el-row>

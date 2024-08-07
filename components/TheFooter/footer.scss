@@ -166,6 +166,19 @@ footer {
           margin-right: 0;
         }
       }
+
+      .footerCopy {
+        margin-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        padding-top: 19px;
+        line-height: 40px;
+        font-size: 16px;
+        color: #fff;
+      }
+
+      .footerCopy a {
+        color: #fff;
+      }
     }
   }
 }
