@@ -1,3 +1,10 @@
+<!--
+ * @Author: abbott
+ * @Date: 2024-08-06 15:04:28
+ * @LastEditors: abbott
+ * @LastEditTime: 2024-08-07 09:35:52
+ * @Description: 
+-->
 <template>
   <footer>
     <div class="footerWrap">

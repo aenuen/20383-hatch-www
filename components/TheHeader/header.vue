@@ -1,8 +1,13 @@
 <template>
-  <header>
+  <header :class="isTop ? '' : 'isTop'">
     <div class="header-wrap">
-      <div class="logo">
-        <nuxt-link to="/" :title="logoName"><img src="@/assets/images/logo.png" :alt="logoName" /></nuxt-link>
+      <div class="top">
+        <div class="logo">
+          <nuxt-link to="/" :title="logoName">
+            <img src="@/assets/images/logo.png" :alt="logoName" />
+          </nuxt-link>
+        </div>
+        <div class="telephone">服务热线：400-0883655</div>
       </div>
       <nav>
         <ul class="main-menu">
@@ -21,7 +26,6 @@
           </li>
         </ul>
       </nav>
-      <div class="telephone">服务热线：400-0883655</div>
     </div>
   </header>
 </template>
@@ -43,12 +47,19 @@ export default {
     return {
       logoName: '万川汇泽综合服务与产业孵化平台',
       navAry,
+      isTop: true, // 初始化为true，表示在顶部
     }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll)
   },
   created() {},
   methods: {
-    openPage(url) {
-      window.open(url, '_blank')
+    handleScroll() {
+      this.isTop = window.scrollY === 0
     },
   },
 }

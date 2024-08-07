@@ -16,8 +16,15 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-  css: ['element-ui/lib/theme-chalk/index.css', '~/assets/css/init.css'],// Global CSS: https://go.nuxtjs.dev/config-css
-  plugins: ['@/plugins/element-ui'],// Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+  // Global CSS: https://go.nuxtjs.dev/config-css
+  css: [
+    'element-ui/lib/theme-chalk/index.css',
+    '~/assets/css/reset.css'
+  ],
+  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+  plugins: [
+    '@/plugins/element-ui'
+  ],
   components: true,// Auto import components: https://go.nuxtjs.dev/config-components
   buildModules: [// Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
     '@nuxtjs/eslint-module',// https://go.nuxtjs.dev/eslint
